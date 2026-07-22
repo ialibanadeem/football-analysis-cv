@@ -87,9 +87,9 @@ flowchart TD
 
 ```
 football-analysis/
-│-- camera_movement_estimator/     # Optical flow camera shift calculation & overlay
-│-- development_and_analysis/       # Jupyter notebooks for model prototyping & color tuning
+│-- metrics/                       # Evaluation & metrics calculators for all 9 CV modules
 │-- models/                        # Fine-tuned YOLOv8 model weights (best.pt)
+│-- output_metrics/                 # Saved evaluation charts & summary JPG reports
 │-- player_ball_assigner/          # Distance-based ball possession assignment logic
 │-- speed_and_distance_estimator/  # Metrics computation (speed in km/h, distance in m)
 │-- stubs/                         # Cached tracking & camera movement data for fast dev iterations
@@ -99,6 +99,29 @@ football-analysis/
 │-- view_transformer/              # Perspective transform mapping pixels to real-world meters
 │-- main.py                        # Central execution script & pipeline coordinator
 │-- requirements.txt               # Project dependencies
+```
+
+---
+
+## 📊 Evaluation & Metrics Suite
+
+The project includes a comprehensive evaluation module under `metrics/` to compute quantitative metrics and save visual JPG charts across all 9 core components:
+
+| Component | Metrics Calculated | Visual JPG Output |
+| --- | --- | --- |
+| **Object Detection** | mAP50, mAP50-95, Precision, Recall | `object_detection_pr_curve.jpg` |
+| **Player Tracking** | IDF1, MOTA, ID switches | `player_tracking_summary.jpg` |
+| **Ball Tracking** | Precision, Recall, Detection rate | `ball_tracking_timeline.jpg` |
+| **Jersey Classification** | Accuracy, F1-score | `jersey_classification_confusion_matrix.jpg` |
+| **Possession** | Accuracy against GT | `possession_timeline.jpg` |
+| **Camera Compensation** | Mean optical-flow displacement before vs after | `camera_compensation_displacement.jpg` |
+| **Perspective Mapping** | Pixel-to-pitch coordinate error (MAE, RMSE in meters) | `perspective_mapping_error_map.jpg` |
+| **Speed Estimation** | Error against reference speed/distance | `speed_estimation_analysis.jpg` |
+| **Runtime** | FPS, Latency (ms), CPU/RAM/GPU Usage | `runtime_summary.jpg` |
+
+To run the metrics evaluation and generate all visual `.jpg` reports:
+```bash
+python -m metrics.example_usage
 ```
 
 ---
