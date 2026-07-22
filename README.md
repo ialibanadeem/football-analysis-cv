@@ -14,20 +14,7 @@ By combining **deep learning object detection (YOLOv8)**, **multi-object trackin
 
 ## 📌 Project Demo
 
-*(Add a GIF or MP4 preview of your processed output video here)*
-
-```
-+-----------------------------------------------------------------------------------+
-|  [ Team 1 Ball Control: 54.20% ]                 [ Team 2 Ball Control: 45.80% ] |
-|  [ Camera Movement X: -1.24 ]                    [ Camera Movement Y: +0.45 ]    |
-|                                                                                   |
-|         o (Ball: Green Triangle)                                                 |
-|        /|\                                                                        |
-|       (Player 10: Red Ellipse - 24.5 km/h | 1,420 m)                                  |
-|                                                                                   |
-|                                (Player 7: Blue Ellipse - 18.2 km/h | 2,150 m)        |
-+-----------------------------------------------------------------------------------+
-```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/222dd37c-dcbc-49d0-b362-6e59245f17b8" />
 
 ---
 
@@ -168,12 +155,7 @@ The output video with all tracking ellipses, team possession overlays, optical f
 
 ---
 
-## 🤝 Author & Contact
-
-**Your Name**
-* LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-* GitHub: [@yourusername](https://github.com/yourusername)
-* Portfolio / Email: `your.email@example.com`
+* LinkedIn: https://www.linkedin.com/in/aliba7/
 
 ---
 *If you find this repository useful, please consider giving it a ⭐!*
