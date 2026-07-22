@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / Editor
+.idea/
+.vscode/
+
+# Large Model Weights (>100MB limit on GitHub)
+models/*.pt
+yolov8s.pt
+
+# Output / Runs
+runs/
+.DS_Store
